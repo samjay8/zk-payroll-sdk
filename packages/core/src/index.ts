@@ -18,6 +18,13 @@ export { PayrollService } from "./payroll";
 export { PayrollContract } from "./contract";
 export { ZKProofGenerator } from "./crypto/proofs";
 export { SnarkjsProofGenerator } from "./crypto/SnarkjsProofGenerator";
+export { WorkerProofGenerator } from "./crypto/WorkerProofGenerator";
+export type {
+  WorkerLike,
+  WorkerProofOptions,
+  ProofProgressCallback,
+} from "./crypto/WorkerProofGenerator";
+export type { WorkerRequest, WorkerResponse, ProofProgressStage } from "./crypto/WorkerMessages";
 export {
   ZkPayrollError,
   NetworkError,
